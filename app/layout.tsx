@@ -5,6 +5,7 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import CookieConsent from "@/components/CookieConsent";
+import { Analytics } from "@vercel/analytics/next";
 import { SITE_URL } from "@/lib/jsonld";
 
 const display = Space_Grotesk({
@@ -61,6 +62,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );
