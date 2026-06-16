@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Contact | Calcento",
   description,
   alternates: { canonical: `${SITE_URL}/contact` },
+  openGraph: {
+    title: "Contact Calcento",
+    description,
+    url: `${SITE_URL}/contact`,
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

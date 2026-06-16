@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Disclaimer | Calcento",
   description,
   alternates: { canonical: `${SITE_URL}/disclaimer` },
+  openGraph: {
+    title: "Disclaimer | Calcento",
+    description,
+    url: `${SITE_URL}/disclaimer`,
+    type: "website",
+  },
 };
 
 export default function DisclaimerPage() {

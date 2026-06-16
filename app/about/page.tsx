@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "About Calcento | Calcento",
   description,
   alternates: { canonical: `${SITE_URL}/about` },
+  openGraph: {
+    title: "About Calcento",
+    description,
+    url: `${SITE_URL}/about`,
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

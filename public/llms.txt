@@ -1,0 +1,42 @@
+# Calcento — Free Pay & Workplace Calculators
+# https://www.calcento.com
+# llms.txt v1 — https://llmstxt.org
+
+> Calcento provides free, browser-based calculators for workplace math: pay raises, overtime pay, employee turnover, cost of turnover, and PTO accrual. All calculations run client-side — no account required. Results are estimates for general guidance and are not financial, legal, or tax advice.
+
+## Calculators
+
+- [Pay Raise Calculator](https://www.calcento.com/pay-raise-calculator): Calculate a raise by percentage or dollar amount, or compare two salaries to find the percentage increase.
+- [Overtime Pay Calculator](https://www.calcento.com/overtime-pay-calculator): Compute gross overtime pay using regular and overtime hours and an hourly rate.
+- [Employee Turnover Calculator](https://www.calcento.com/employee-turnover-calculator): Measure employee turnover rate from headcount and separations over a period.
+- [Cost of Turnover Calculator](https://www.calcento.com/cost-of-turnover-calculator): Estimate the total cost of replacing an employee, including recruiting, onboarding, and lost productivity.
+- [PTO Accrual Calculator](https://www.calcento.com/pto-accrual-calculator): Calculate how much paid time off an employee has accrued based on accrual rate and hours worked.
+
+## Blog — Calculator Guides
+
+- [How to Calculate a Salary Increase Percentage](https://www.calcento.com/blog/how-to-calculate-salary-increase-percentage)
+- [How to Calculate Overtime Pay](https://www.calcento.com/blog/how-to-calculate-overtime-pay)
+- [How to Calculate Employee Turnover Rate](https://www.calcento.com/blog/how-to-calculate-employee-turnover-rate)
+- [How to Calculate Cost of Turnover](https://www.calcento.com/blog/how-to-calculate-cost-of-turnover)
+- [How to Calculate PTO Accrual](https://www.calcento.com/blog/how-to-calculate-pto-accrual)
+
+## Blog — Pay & Benchmarks
+
+- [What Is a Good Pay Raise? Benchmarks by Industry](https://www.calcento.com/blog/what-is-a-good-pay-raise)
+- [Percentage vs Dollar Raise: Which Is Better?](https://www.calcento.com/blog/percentage-vs-dollar-raise)
+- [What Is a Cost of Living Adjustment (COLA)?](https://www.calcento.com/blog/what-is-cost-of-living-adjustment)
+
+## Blog — HR Metrics
+
+- [What Is a Healthy Turnover Rate by Industry?](https://www.calcento.com/blog/healthy-turnover-rate-by-industry)
+- [Retention Rate vs Turnover Rate: Key Differences](https://www.calcento.com/blog/retention-rate-vs-turnover-rate)
+- [Accrued PTO vs Lump Sum PTO: What's the Difference?](https://www.calcento.com/blog/accrued-vs-lump-sum-pto)
+
+## Legal & Company
+
+- [About Calcento](https://www.calcento.com/about)
+- [Disclaimer](https://www.calcento.com/disclaimer): All results are estimates for general guidance only — not financial, legal, or tax advice.
+- [Privacy Policy](https://www.calcento.com/privacy-policy)
+- [Terms of Use](https://www.calcento.com/terms)
+- [Cookie Policy](https://www.calcento.com/cookie-policy)
+- [Contact](https://www.calcento.com/contact)

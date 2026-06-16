@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Cookie Policy | Calcento",
   description,
   alternates: { canonical: `${SITE_URL}/cookie-policy` },
+  openGraph: {
+    title: "Cookie Policy | Calcento",
+    description,
+    url: `${SITE_URL}/cookie-policy`,
+    type: "website",
+  },
 };
 
 export default function CookiePolicyPage() {

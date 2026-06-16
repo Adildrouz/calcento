@@ -2,7 +2,7 @@
 // page so Google can show rich results (FAQ accordions, app metadata).
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://calcento.com";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.calcento.com";
 
 export interface FaqItem {
   question: string;

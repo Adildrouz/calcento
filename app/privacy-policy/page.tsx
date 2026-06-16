@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Calcento",
   description,
   alternates: { canonical: `${SITE_URL}/privacy-policy` },
+  openGraph: {
+    title: "Privacy Policy | Calcento",
+    description,
+    url: `${SITE_URL}/privacy-policy`,
+    type: "website",
+  },
 };
 
 export default function PrivacyPolicyPage() {

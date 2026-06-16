@@ -38,6 +38,15 @@ export const metadata: Metadata = {
   description:
     "Free, instant calculators for pay, raises, overtime, and the everyday math of work. No sign-up.",
   applicationName: "Calcento",
+  openGraph: {
+    siteName: "Calcento",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@calcento",
+  },
 };
 
 export default function RootLayout({

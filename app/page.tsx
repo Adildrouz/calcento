@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { calculators } from "@/lib/calculators";
-import { organizationSchema, jsonLdScript } from "@/lib/jsonld";
+import { organizationSchema, jsonLdScript, SITE_URL } from "@/lib/jsonld";
+
+const description =
+  "Free, instant calculators for pay, raises, overtime, and the everyday math of work. No sign-up.";
+
+export const metadata: Metadata = {
+  title: "Calcento — Free Pay & Workplace Calculators",
+  description,
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: "Calcento — Free Pay & Workplace Calculators",
+    description,
+    url: SITE_URL,
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (

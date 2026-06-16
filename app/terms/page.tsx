@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Terms of Use | Calcento",
   description,
   alternates: { canonical: `${SITE_URL}/terms` },
+  openGraph: {
+    title: "Terms of Use | Calcento",
+    description,
+    url: `${SITE_URL}/terms`,
+    type: "website",
+  },
 };
 
 export default function TermsPage() {
