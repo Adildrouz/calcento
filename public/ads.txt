@@ -1,0 +1,11 @@
+# ads.txt — Authorized Digital Sellers for Calcento
+#
+# OWNER ACTION REQUIRED:
+# Once your Google AdSense account is approved, replace the line below with your
+# own publisher ID. Find it in AdSense under Account → Settings, in the form
+# "pub-XXXXXXXXXXXXXXXX". The line must look exactly like this (no "#"):
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# Until you add your real publisher ID, this file intentionally authorizes no
+# sellers. Do not invent or guess an ID — an incorrect ads.txt can hurt ad serving.
