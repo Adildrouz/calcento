@@ -7,6 +7,7 @@ import {
   articleSchema,
   blogBreadcrumbSchema,
   jsonLdScript,
+  AUTHOR,
 } from "@/lib/jsonld";
 
 // The single template every blog article reuses:
@@ -74,8 +75,18 @@ export default function BlogPost({
             <time dateTime={post.date}>{dateFmt.format(new Date(post.date))}</time>
             <span className="mx-2 text-line">·</span>
             {post.readingMinutes} min read
-            <span className="mx-2 text-line">·</span>
-            Reviewed for accuracy
+          </p>
+          <p className="mt-2 text-sm text-muted">
+            By{" "}
+            <a
+              href={AUTHOR.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-ink hover:text-teal"
+            >
+              {AUTHOR.name}
+            </a>
+            {" "}— {AUTHOR.role}, 10+ years in HR &amp; payroll
           </p>
         </header>
 

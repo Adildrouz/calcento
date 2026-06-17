@@ -4,6 +4,12 @@
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.calcento.com";
 
+export const AUTHOR = {
+  name: "Adil Drouz",
+  role: "HR Manager",
+  url: "https://www.linkedin.com/in/adildrouz/",
+} as const;
+
 export interface FaqItem {
   question: string;
   answer: string;
@@ -64,14 +70,33 @@ export function articleSchema(opts: {
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: opts.title,
     description: opts.description,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
     url: `${SITE_URL}/blog/${opts.slug}`,
-    author: { "@type": "Organization", name: "Calcento", url: SITE_URL },
+    author: {
+      "@type": "Person",
+      name: AUTHOR.name,
+      jobTitle: AUTHOR.role,
+      sameAs: AUTHOR.url,
+    },
     publisher: { "@type": "Organization", name: "Calcento", url: SITE_URL },
+  };
+}
+
+export function personSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: AUTHOR.name,
+    jobTitle: AUTHOR.role,
+    description:
+      "HR Manager with over 10 years of experience in human resources, payroll, learning & development, and recruitment.",
+    sameAs: AUTHOR.url,
+    url: `${SITE_URL}/about`,
+    worksFor: { "@type": "Organization", name: "Calcento", url: SITE_URL },
   };
 }
 
