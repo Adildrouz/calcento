@@ -153,3 +153,14 @@ export function postsByCategory(category: PostCategory): PostMeta[] {
 export function relatedPosts(slug: string, limit = 3): PostMeta[] {
   return posts.filter((p) => p.slug !== slug).slice(0, limit);
 }
+
+// Returns all posts linked to a given calculator, excluding one already
+// featured as the primary guide (guideSlug).
+export function postsByCalculator(
+  calculatorSlug: string,
+  excludeSlug?: string
+): PostMeta[] {
+  return posts.filter(
+    (p) => p.calculatorSlug === calculatorSlug && p.slug !== excludeSlug
+  );
+}

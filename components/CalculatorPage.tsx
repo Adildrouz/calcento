@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import AdSlot from "@/components/AdSlot";
 import Faq from "@/components/Faq";
 import { relatedCalculators } from "@/lib/calculators";
+import { postsByCalculator } from "@/lib/posts";
 import {
   webApplicationSchema,
   faqSchema,
@@ -39,6 +40,7 @@ export default function CalculatorPage({
   guideTitle?: string; // link label for that guide
 }) {
   const related = relatedCalculators(slug);
+  const relatedPosts = postsByCalculator(slug, guideSlug);
   const schema = jsonLdScript(
     webApplicationSchema({ name: title, description: metaDescription, slug }),
     breadcrumbSchema({ name: title, slug }),
@@ -72,6 +74,14 @@ export default function CalculatorPage({
         {/* The tool */}
         <section aria-label="Calculator">{children}</section>
 
+        {/* Disclaimer */}
+        <p className="mt-3 text-xs text-muted">
+          Results are pre-tax estimates for general guidance only — not financial, legal, or tax advice.{" "}
+          <Link href="/disclaimer" className="underline hover:text-ink">
+            See disclaimer.
+          </Link>
+        </p>
+
         {/* Link to the matching step-by-step guide */}
         {guideSlug && (
           <p className="mt-4 text-sm text-muted">
@@ -90,6 +100,30 @@ export default function CalculatorPage({
 
         {/* Written content — ranks the long-tail, gives ad inventory */}
         <section className="prose-calcento mx-auto max-w-prose">{content}</section>
+
+        {/* Related reading — non-guide posts for this calculator */}
+        {relatedPosts.length > 0 && (
+          <section className="mx-auto mt-10 max-w-prose">
+            <h2 className="mb-3 font-display text-lg font-semibold tracking-tight text-ink">
+              Related reading
+            </h2>
+            <ul className="space-y-2">
+              {relatedPosts.map((p) => (
+                <li key={p.slug}>
+                  <Link
+                    href={`/blog/${p.slug}`}
+                    className="group flex items-center gap-2 text-sm text-muted hover:text-ink"
+                  >
+                    <span className="font-mono text-teal transition-transform group-hover:translate-x-0.5">
+                      →
+                    </span>
+                    {p.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* FAQ */}
         {faqs.length > 0 && (
