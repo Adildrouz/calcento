@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { calculators } from "@/lib/calculators";
-import { organizationSchema, jsonLdScript, SITE_URL } from "@/lib/jsonld";
+import { organizationSchema, websiteSchema, jsonLdScript, SITE_URL } from "@/lib/jsonld";
 
 const description =
   "Free, instant calculators for pay, raises, overtime, and the everyday math of work. No sign-up.";
@@ -23,7 +23,12 @@ export default function Home() {
     <div className="mx-auto max-w-content px-5">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLdScript(organizationSchema()) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [websiteSchema(), organizationSchema()],
+          }),
+        }}
       />
       {/* Hero */}
       <section className="pb-12 pt-16 sm:pt-24">

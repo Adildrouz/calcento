@@ -20,8 +20,8 @@ export function webApplicationSchema(opts: {
     name: opts.name,
     description: opts.description,
     url: `${SITE_URL}/${opts.slug}`,
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "All",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Web Browser",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     publisher: { "@type": "Organization", name: "Calcento", url: SITE_URL },
   };
@@ -72,6 +72,17 @@ export function articleSchema(opts: {
     url: `${SITE_URL}/blog/${opts.slug}`,
     author: { "@type": "Organization", name: "Calcento", url: SITE_URL },
     publisher: { "@type": "Organization", name: "Calcento", url: SITE_URL },
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Calcento",
+    url: SITE_URL,
+    description:
+      "Free, instant calculators for pay, raises, overtime, turnover, and the everyday math of work.",
   };
 }
 

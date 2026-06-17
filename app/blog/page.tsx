@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { postCategories, postsByCategory } from "@/lib/posts";
-import { SITE_URL } from "@/lib/jsonld";
+import { breadcrumbSchema, jsonLdScript, SITE_URL } from "@/lib/jsonld";
 
 const description =
   "Plain-English guides to the everyday math of work — how to calculate pay raises, overtime, employee turnover, and PTO accrual, plus pay benchmarks and HR metrics explained.";
@@ -28,6 +28,12 @@ const dateFmt = new Intl.DateTimeFormat("en-US", {
 export default function BlogIndex() {
   return (
     <div className="mx-auto max-w-content px-5">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdScript(breadcrumbSchema({ name: "Blog", slug: "blog" })),
+        }}
+      />
       {/* Breadcrumb */}
       <nav className="pt-6 text-xs text-muted" aria-label="Breadcrumb">
         <Link href="/" className="hover:text-teal">
