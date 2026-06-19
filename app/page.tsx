@@ -9,6 +9,7 @@ import {
   SITE_URL,
 } from "@/lib/jsonld";
 import Faq from "@/components/Faq";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const description =
   "Free workplace calculators for pay raises, overtime, PTO, and employee turnover. Instant results, no account, every formula explained in plain English.";
@@ -29,6 +30,7 @@ const audiences = [
   {
     label: "For Employees",
     icon: "👤",
+    accent: "border-l-teal",
     headline: "Get a clear answer before your next conversation.",
     bullets: [
       "Is this raise offer good? See the percentage and what it means per paycheck.",
@@ -40,6 +42,7 @@ const audiences = [
   {
     label: "For HR & People Teams",
     icon: "🏢",
+    accent: "border-l-[#b97a2b]",
     headline: "Quick answers between HRIS tasks.",
     bullets: [
       "Explain a raise to an employee in seconds — show them the math, not just the number.",
@@ -51,6 +54,7 @@ const audiences = [
   {
     label: "For Managers & Small Businesses",
     icon: "📊",
+    accent: "border-l-[#0b5750]",
     headline: "No HRIS? You don't need one for this.",
     bullets: [
       "Budget a pay raise without a compensation team.",
@@ -130,6 +134,7 @@ const homeFaqs = [
 export default function Home() {
   return (
     <div className="mx-auto max-w-content px-5">
+      <StickyMobileCTA />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -189,7 +194,7 @@ export default function Home() {
           {audiences.map((a) => (
             <div
               key={a.label}
-              className="flex flex-col justify-between rounded-2xl border border-line bg-card p-6 shadow-card"
+              className={`flex flex-col justify-between rounded-2xl border border-line border-l-4 bg-card p-6 shadow-card ${a.accent}`}
             >
               <div>
                 <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-teal-soft px-3 py-1 text-xs font-medium text-teal">

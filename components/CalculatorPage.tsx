@@ -20,6 +20,7 @@ export default function CalculatorPage({
   slug,
   title,
   tagline,
+  audienceLine,
   metaDescription,
   children,
   content,
@@ -31,6 +32,7 @@ export default function CalculatorPage({
   slug: string;
   title: string;
   tagline: string;
+  audienceLine?: string; // e.g. "For employees & managers"
   metaDescription: string;
   children: ReactNode; // the interactive calculator
   content: ReactNode; // the prose section below the tool
@@ -65,6 +67,12 @@ export default function CalculatorPage({
 
         {/* Hero */}
         <header className="pb-8 pt-5">
+          {audienceLine && (
+            <p className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-line bg-card px-3 py-1 text-xs text-muted">
+              <span className="font-mono text-teal">→</span>
+              {audienceLine}
+            </p>
+          )}
           <h1 className="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
             {title}
           </h1>

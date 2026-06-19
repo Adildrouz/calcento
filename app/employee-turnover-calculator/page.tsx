@@ -10,7 +10,7 @@ const description =
   "Free employee turnover rate calculator. Enter your starting and ending headcount and the number of leavers to get turnover rate, retention rate, and an annualized figure.";
 
 export const metadata: Metadata = {
-  title: `${meta.title} — Turnover & Retention Rate | Calcento`,
+  title: `${meta.title} for HR Teams & Managers — Turnover & Retention Rate | Calcento`,
   description,
   alternates: { canonical: `${SITE_URL}/${meta.slug}` },
   openGraph: {
@@ -28,6 +28,7 @@ export default function Page() {
       slug={meta.slug}
       title={meta.title}
       tagline="Enter your headcount at the start and end of the period and how many people left. See turnover rate, retention rate, and the annualized figure instantly."
+      audienceLine="For HR teams tracking attrition · managers measuring team stability"
       metaDescription={description}
       content={<TurnoverContent />}
       faqs={turnoverFaqs}

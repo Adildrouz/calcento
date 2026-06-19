@@ -10,7 +10,7 @@ const description =
   "Free cost of employee turnover calculator. Estimate what staff turnover costs your business from the number of leavers, average salary, and a replacement-cost percentage.";
 
 export const metadata: Metadata = {
-  title: `${meta.title} — What Staff Turnover Costs | Calcento`,
+  title: `${meta.title} for HR & Small Business — What Staff Turnover Costs | Calcento`,
   description,
   alternates: { canonical: `${SITE_URL}/${meta.slug}` },
   openGraph: {
@@ -28,6 +28,7 @@ export default function Page() {
       slug={meta.slug}
       title={meta.title}
       tagline="Enter how many people left, their average salary, and an estimated replacement cost to see what turnover is costing your business."
+      audienceLine="For HR & finance teams · managers building the case for retention"
       metaDescription={description}
       content={<CostOfTurnoverContent />}
       faqs={costOfTurnoverFaqs}

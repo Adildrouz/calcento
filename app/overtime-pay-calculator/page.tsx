@@ -10,7 +10,7 @@ const description =
   "Free overtime pay calculator. Work out time-and-a-half and double-time pay from an hourly rate or an annual salary, and see your total weekly pay with the overtime broken out.";
 
 export const metadata: Metadata = {
-  title: `${meta.title} — Time and a Half & Double Time | Calcento`,
+  title: `${meta.title} for Employees & Managers — Time and a Half & Double Time | Calcento`,
   description,
   alternates: { canonical: `${SITE_URL}/${meta.slug}` },
   openGraph: {
@@ -28,6 +28,7 @@ export default function Page() {
       slug={meta.slug}
       title={meta.title}
       tagline="Enter your hourly rate or salary, your regular and overtime hours, and pick time-and-a-half or double time. See your total weekly pay instantly."
+      audienceLine="For employees verifying overtime pay · managers scheduling shifts"
       metaDescription={description}
       content={<OvertimeContent />}
       faqs={overtimeFaqs}

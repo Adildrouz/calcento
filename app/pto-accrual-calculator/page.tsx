@@ -10,7 +10,7 @@ const description =
   "Free PTO accrual calculator. Turn an annual paid-time-off entitlement into an accrual rate per hour worked, see PTO earned per week, pay period, and month, or how much you have accrued so far.";
 
 export const metadata: Metadata = {
-  title: `${meta.title} — Accrual Rate & Balance | Calcento`,
+  title: `${meta.title} for Employees & HR — Accrual Rate & Balance | Calcento`,
   description,
   alternates: { canonical: `${SITE_URL}/${meta.slug}` },
   openGraph: {
@@ -28,6 +28,7 @@ export default function Page() {
       slug={meta.slug}
       title={meta.title}
       tagline="Turn your annual PTO entitlement into an accrual rate, or work out how much paid time off you have earned from the hours you have worked so far."
+      audienceLine="For employees checking their balance · HR teams explaining PTO policies"
       metaDescription={description}
       content={<PtoContent />}
       faqs={ptoFaqs}
