@@ -105,12 +105,54 @@ export default function PrivacyPolicyPage() {
           usage statistics. We do not sell personal data.
         </p>
 
-        <h2>Your choices</h2>
+        <h2>Your choices and rights</h2>
         <p>
           You can control or delete cookies through your browser settings, and you
           can opt out of personalized ads through Google Ads Settings as described
           above. Declining advertising cookies does not prevent you from using any
           calculator on the site.
+        </p>
+        <p>
+          Depending on your location, you may have additional rights under
+          applicable privacy laws (such as the GDPR in the European Economic Area
+          or the CCPA in California), including:
+        </p>
+        <ul>
+          <li>
+            <strong>Right to access:</strong> you may request confirmation of
+            whether we hold personal data about you and, if so, a copy of that
+            data.
+          </li>
+          <li>
+            <strong>Right to deletion:</strong> you may request that we delete
+            any personal data we hold about you, subject to legal obligations.
+          </li>
+          <li>
+            <strong>Right to object:</strong> you may object to the processing
+            of your personal data for direct marketing or behavioral advertising
+            purposes.
+          </li>
+          <li>
+            <strong>Right to opt out of sale (CCPA):</strong> Calcento does not
+            sell personal information. We do not have actual knowledge of selling
+            personal information of consumers under 16 years of age.
+          </li>
+        </ul>
+        <p>
+          Because Calcento&rsquo;s calculators run entirely in your browser and
+          we do not collect or store personal data on our servers, most of these
+          rights apply primarily to data held by third-party services (such as
+          Google AdSense). To exercise rights related to Google&rsquo;s data
+          processing, visit{" "}
+          <a
+            href="https://myaccount.google.com/data-and-privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google&rsquo;s Data &amp; Privacy page
+          </a>
+          . For any other privacy request, contact us at{" "}
+          <a href="mailto:hello@calcento.com">hello@calcento.com</a>.
         </p>
 
         <h2>Children&rsquo;s privacy</h2>

@@ -80,7 +80,7 @@ export default function SiteFooter() {
         </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-muted sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Calcento. For guidance only, not financial advice.</p>
-          <p className="font-mono">calcento.com</p>
+          <p className="font-mono">www.calcento.com</p>
         </div>
       </div>
     </footer>

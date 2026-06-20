@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   description:
     "Free, instant calculators for pay, raises, overtime, and the everyday math of work. No sign-up.",
   applicationName: "Calcento",
+  robots: { index: true, follow: true },
   openGraph: {
     siteName: "Calcento",
     type: "website",
@@ -57,6 +58,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Calcento Blog"
+          href={`${SITE_URL}/feed.xml`}
+        />
         {adsenseClient && (
           <Script
             async
