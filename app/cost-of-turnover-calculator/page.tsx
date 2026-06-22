@@ -4,6 +4,7 @@ import CostOfTurnoverCalculator from "@/components/CostOfTurnoverCalculator";
 import { CostOfTurnoverContent, costOfTurnoverFaqs } from "@/content/costOfTurnover";
 import { getCalculator } from "@/lib/calculators";
 import { SITE_URL } from "@/lib/jsonld";
+import { adSlots } from "@/lib/ads";
 
 const meta = getCalculator("cost-of-turnover-calculator")!;
 const description =
@@ -32,7 +33,7 @@ export default function Page() {
       metaDescription={description}
       content={<CostOfTurnoverContent />}
       faqs={costOfTurnoverFaqs}
-      adSlotId={undefined}
+      adSlotId={adSlots.costOfTurnover}
       guideSlug="how-to-calculate-cost-of-employee-turnover"
       guideTitle="Read: how to calculate the cost of turnover"
     >

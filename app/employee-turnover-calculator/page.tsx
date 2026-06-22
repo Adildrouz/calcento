@@ -4,6 +4,7 @@ import TurnoverCalculator from "@/components/TurnoverCalculator";
 import { TurnoverContent, turnoverFaqs } from "@/content/turnover";
 import { getCalculator } from "@/lib/calculators";
 import { SITE_URL } from "@/lib/jsonld";
+import { adSlots } from "@/lib/ads";
 
 const meta = getCalculator("employee-turnover-calculator")!;
 const description =
@@ -32,7 +33,7 @@ export default function Page() {
       metaDescription={description}
       content={<TurnoverContent />}
       faqs={turnoverFaqs}
-      adSlotId={undefined}
+      adSlotId={adSlots.employeeTurnover}
       guideSlug="how-to-calculate-employee-turnover-rate"
       guideTitle="Read: how to calculate turnover rate"
     >

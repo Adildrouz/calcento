@@ -4,6 +4,7 @@ import OvertimeCalculator from "@/components/OvertimeCalculator";
 import { OvertimeContent, overtimeFaqs } from "@/content/overtime";
 import { getCalculator } from "@/lib/calculators";
 import { SITE_URL } from "@/lib/jsonld";
+import { adSlots } from "@/lib/ads";
 
 const meta = getCalculator("overtime-pay-calculator")!;
 const description =
@@ -32,7 +33,7 @@ export default function Page() {
       metaDescription={description}
       content={<OvertimeContent />}
       faqs={overtimeFaqs}
-      adSlotId={undefined}
+      adSlotId={adSlots.overtimePay}
       guideSlug="how-to-calculate-overtime-pay"
       guideTitle="Read: how to calculate overtime pay"
     >

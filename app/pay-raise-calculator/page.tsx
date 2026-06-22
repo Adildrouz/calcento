@@ -4,6 +4,7 @@ import PayRaiseCalculator from "@/components/PayRaiseCalculator";
 import { PayRaiseContent, payRaiseFaqs } from "@/content/payRaise";
 import { getCalculator } from "@/lib/calculators";
 import { SITE_URL } from "@/lib/jsonld";
+import { adSlots } from "@/lib/ads";
 
 const meta = getCalculator("pay-raise-calculator")!;
 const description =
@@ -32,7 +33,7 @@ export default function Page() {
       metaDescription={description}
       content={<PayRaiseContent />}
       faqs={payRaiseFaqs}
-      adSlotId={undefined}
+      adSlotId={adSlots.payRaise}
       guideSlug="how-to-calculate-salary-increase-percentage"
       guideTitle="Read: how to calculate a salary increase percentage"
     >

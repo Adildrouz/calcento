@@ -4,6 +4,7 @@ import PtoCalculator from "@/components/PtoCalculator";
 import { PtoContent, ptoFaqs } from "@/content/pto";
 import { getCalculator } from "@/lib/calculators";
 import { SITE_URL } from "@/lib/jsonld";
+import { adSlots } from "@/lib/ads";
 
 const meta = getCalculator("pto-accrual-calculator")!;
 const description =
@@ -32,7 +33,7 @@ export default function Page() {
       metaDescription={description}
       content={<PtoContent />}
       faqs={ptoFaqs}
-      adSlotId={undefined}
+      adSlotId={adSlots.ptoAccrual}
       guideSlug="how-to-calculate-pto-accrual"
       guideTitle="Read: how to calculate PTO accrual"
     >
