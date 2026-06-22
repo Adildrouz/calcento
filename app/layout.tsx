@@ -58,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-9841483299411545" />
         <link
           rel="alternate"
           type="application/rss+xml"
