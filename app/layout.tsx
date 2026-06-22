@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     "Free, instant calculators for pay, raises, overtime, and the everyday math of work. No sign-up.",
   applicationName: "Calcento",
   robots: { index: true, follow: true },
+  other: {
+    "google-adsense-account": "ca-pub-9841483299411545",
+  },
   openGraph: {
     siteName: "Calcento",
     type: "website",
@@ -58,7 +61,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
-        <meta name="google-adsense-account" content="ca-pub-9841483299411545" />
         <link
           rel="alternate"
           type="application/rss+xml"
