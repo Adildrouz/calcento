@@ -181,7 +181,7 @@ export default function NavDropdown() {
           href="/pay-raise-calculator"
           className="ml-2 rounded-lg bg-teal px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-teal-deep"
         >
-          Try free →
+          Open a calculator →
         </Link>
       </nav>
 
@@ -191,7 +191,7 @@ export default function NavDropdown() {
           href="/pay-raise-calculator"
           className="rounded-lg bg-teal px-3.5 py-2 text-sm font-medium text-paper"
         >
-          Try free
+          Open calculator
         </Link>
         <button
           onClick={() => setMobileOpen((o) => !o)}
