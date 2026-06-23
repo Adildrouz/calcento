@@ -107,7 +107,7 @@ export default function NavDropdown() {
           {/* Dropdown panel */}
           {open && (
             <div
-              className="absolute left-0 top-full z-50 mt-2 w-[640px] overflow-hidden rounded-2xl border border-line bg-card shadow-[0_8px_32px_-8px_rgba(16,42,51,0.18),0_0_0_1px_rgba(16,42,51,0.04)]"
+              className="absolute right-0 top-full z-50 mt-2 w-[640px] overflow-hidden rounded-2xl border border-line bg-card shadow-[0_8px_32px_-8px_rgba(16,42,51,0.18),0_0_0_1px_rgba(16,42,51,0.04)]"
               role="menu"
             >
               {/* Panel header */}
