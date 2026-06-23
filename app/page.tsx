@@ -231,7 +231,7 @@ export default function Home() {
           All calculators
         </h2>
         <p className="mb-7 text-base text-ink">
-          Five free tools. More on the way.
+          Eleven free tools — pay, hours, leave, bonuses, and HR metrics.
         </p>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {calculators.map((c) => {

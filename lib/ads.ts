@@ -5,7 +5,13 @@
 export const adSlots = {
   payRaise: undefined as string | undefined,
   overtimePay: undefined as string | undefined,
+  salaryToHourly: undefined as string | undefined,
+  workingHours: undefined as string | undefined,
+  bonus: undefined as string | undefined,
+  vacationDays: undefined as string | undefined,
+  jobOffer: undefined as string | undefined,
   employeeTurnover: undefined as string | undefined,
   ptoAccrual: undefined as string | undefined,
   costOfTurnover: undefined as string | undefined,
+  bradfordFactor: undefined as string | undefined,
 };
