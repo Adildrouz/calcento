@@ -24,6 +24,7 @@ export default function OGImage() {
         <div style={{ display: "flex", flexDirection: "column", gap: "32px", maxWidth: "560px" }}>
           {/* Logo row */}
           <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+            {/* Icon mark */}
             <div
               style={{
                 width: "72px",
